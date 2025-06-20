@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server/socket-server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server/socket-server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -36,6 +36,7 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@types/react-pdf": "^6.2.0",
+    "@types/socket.io": "^3.0.1",
     "eslint": "^8.57.1",
     "eslint-config-next": "^12.3.7",
     "jest": "^30.0.0",
